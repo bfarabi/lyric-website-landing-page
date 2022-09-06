@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>lyrics</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="">
+        <div class="container-fluid">
+          <div class="">
+            <ul class="navbar-nav navbar-menu d-flex flex-row justify-content-end align-items-center mb-2 mb-lg-0">
+              <li class="nav-item dropdown bg-secondary my-2 rounded-2">
+                <a
+                  class="nav-link dropdown-toggle text-light px-1 fs-6"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  The Network
+                </a>
+                <ul class="dropdown-menu drop-menu bg-light">
+                  <li class="nw-abbreviations"><a href="">ABBREVIATIONS</a></li>
+                  <li class="nw-anagrams"><a href="">ANAGRAMS</a></li>
+                  <li class="nw-biographies"><a href="">BIOGRAPHIES</a></li>
+                  <li class="nw-calculator"><a href="">CALCULATORS</a></li>
+                  <li class="nw-convert"><a href="">CONVERSIONS</a></li>
+                  <li class="nw-definitions"><a href="">DEFINITIONS</a></li>
+                  <li class="nw-grammar"><a href="">GRAMMAR</a></li>
+                  <li class="nw-literature"><a href="">LITERATURE</a></li>
+                  <li class="nw-lyrics"><a href="">LYRICS</a></li>
+                  <li class="nw-phrases"><a href="">PHRASES</a></li>
+                  <li class="nw-poetry"><a href="">POETRY</a></li>
+                  <li class="nw-quotes"><a href="">QUOTES</a></li>
+                  <li class="nw-references"><a href="">REFERENCES</a></li>
+                  <!-- <li class="nw-rhymes"><a href="">RHYMES</a></li>
+                  <li class="nw-scripts"><a href="">SCRIPTS</a></li>
+                  <li class="nw-symbols"><a href="">SYMBOLS</a></li>
+                  <li class="nw-synonyms"><a href="">SYNONYMS</a></li>
+                  <li class="nw-uszip"><a href="">USZIP</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-item login my-2 rounded-2 px-1 text-light">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Login <iconify-icon icon="entypo:login" width="15"></iconify-icon
+                ></a>
+              </li>
+              <li class="nav-item bg-dark text-light my-2 rounded-2 px-2">
+                <a class="nav-link" href="#"> <iconify-icon icon="bx:history" width="17"></iconify-icon></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- search area -->
+
+    <section class="container ">
+      <div class="bg-dark row rounded-2">
+        <div class="col-md-9 d-flex position-relative align-items-center justify-content-end">
+          <div class="logo-image">
+            <a class="" href="#">
+              <img class="logo-img position-absolute" src="/assets/top_logo_lyr.png" alt="" width="250" height="200" />
+            </a>
+          </div>
+          <div class="input-group my-4 w-50">
+            <div class="mt-1">
+              <iconify-icon icon="bx:search" style="color: white" width="24"></iconify-icon>
+            </div>
+            <input
+              type="text"
+              class="form-control rounded-start"
+              placeholder="search"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn btn-light search-btn text-light" type="button" id="button-addon2">search</button>
+          </div>
+        </div>
+
+        <div class="radio-btn text-light col-md-3 my-auto">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="exampleRadios"
+              id="exampleRadios1"
+              value="option1"
+              checked
+            />
+            <label class="form-check-label" for="exampleRadios1"> In lyrics </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+            <label class="form-check-label" for="exampleRadios2"> by artist </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" />
+            <label class="form-check-label" for="exampleRadios3"> by album </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="abc-section my-2 py-2 row rounded-2">
+        <p class="mb-0"># A B C D F G H I J K L M O P Q R S T</p>
+      </div>
+    </section>
+
+          <!-- start left column -->
+
+    <section class="container pe-0">
+      <div class="row main-row ">
+        <div class="col-md-4 ps-0">
+          <!--  icon area -->
+          <div class="icon-area row">
+            <hr />
+            <div class="tagline">
+              <h3>The Web's Largest Resource for</h3>
+              <h2>Music, Songs <span>&amp;</span> Lyrics</h2>
+            </div>
+            <div class="middle-sep">
+              <hr />
+              <h3>A Member Of The <span>STANDS4 Network</span></h3>
+            </div>
+            <div class="social-icon d-flex justify-content-around">
+              <a href=""><iconify-icon icon="akar-icons:twitter-fill" width="54"></iconify-icon></a>
+              <a href=""><iconify-icon icon="akar-icons:facebook-fill" width="54"></iconify-icon></a>
+              <a href=""><iconify-icon icon="akar-icons:reddit-fill" width="54"></iconify-icon></a>
+              <a href=""><iconify-icon icon="simple-icons:addthis" width="50"></iconify-icon></a>
+            </div>
+            <hr />
+          </div>
+          <!-- end icon area -->
+
+          <!-- start popular artist -->
+          <div class="popular-artist row">
+            <div class="col-9">
+              <h4>Our favorite collection of</h4>
+              <h3>Popular Artists</h3>
+            </div>
+
+            <div class="col-3">
+              <a><iconify-icon icon="ic:baseline-keyboard-double-arrow-right" width="50"></iconify-icon></a>
+            </div>
+            <div class="artist-list my-2">
+              <ul>
+                <li>
+                  <div class="artist-img">
+                    <a href="artist/SB19/2137849178" aria-label="SB19"
+                      ><img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/SB19_at_Pepsi_Taste_Challenge_in_Davao.jpg/320px-SB19_at_Pepsi_Taste_Challenge_in_Davao.jpg"
+                        alt=""
+                        title="SB19"
+                        width="50"
+                    /></a>
+                  </div>
+                  <div class="artist-infos">
+                    <div class="artist-title">
+                      <strong><a href="artist/SB19/2137849178">SB19</a></strong>
+                    </div>
+                    <div class="artist-fans"><a href="artist-fans/2137849178">350 fans</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="artist-img">
+                    <a href="artist/Billie-Eilish/3177510" aria-label="Billie Eilish"
+                      ><img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Billie_Eilish_2019_by_Glenn_Francis_(cropped)_2.jpg/208px-Billie_Eilish_2019_by_Glenn_Francis_(cropped)_2.jpg"
+                        alt=""
+                        title="Billie Eilish"
+                        width="50"
+                    /></a>
+                  </div>
+                  <div class="artist-infos">
+                    <div class="artist-title">
+                      <strong><a href="artist/Billie-Eilish/3177510">Billie Eilish</a></strong>
+                    </div>
+                    <div class="artist-fans"><a href="artist-fans/3177510">218 fans</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="artist-img">
+                    <a href="artist/Imagine-Dragons/1184089" aria-label="Imagine Dragons"
+                      ><img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Imagine_Dragons,_Roundhouse,_London_(35390234536).jpg/300px-Imagine_Dragons,_Roundhouse,_London_(35390234536).jpg"
+                        alt=""
+                        title="Imagine Dragons"
+                        width="50"
+                    /></a>
+                  </div>
+                  <div class="artist-infos">
+                    <div class="artist-title">
+                      <strong><a href="artist/Imagine-Dragons/1184089">Imagine Dragons</a></strong>
+                    </div>
+                    <div class="artist-fans"><a href="artist-fans/1184089">205 fans</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="artist-img">
+                    <a href="artist/XXXTENTACION/3303401" aria-label="XXXTENTACION"
+                      ><img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Xxxtentacion_(cropped).jpg/240px-Xxxtentacion_(cropped).jpg"
+                        alt=""
+                        title="XXXTENTACION"
+                        width="50"
+                    /></a>
+                  </div>
+                  <div class="artist-infos">
+                    <div class="artist-title">
+                      <strong><a href="artist/XXXTENTACION/3303401">XXXTENTACION</a></strong>
+                    </div>
+                    <div class="artist-fans"><a href="artist-fans/3303401">194 fans</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="artist-img">
+                    <a href="artist/Ariana-Grande/1223462" aria-label="Ariana Grande"
+                      ><img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Ariana_Grande_Grammys_Red_Carpet_2020.png/209px-Ariana_Grande_Grammys_Red_Carpet_2020.png"
+                        alt=""
+                        title="Ariana Grande"
+                        width="50"
+                    /></a>
+                  </div>
+                  <div class="artist-infos">
+                    <div class="artist-title">
+                      <strong><a href="artist/Ariana-Grande/1223462">Ariana Grande</a></strong>
+                    </div>
+                    <div class="artist-fans"><a href="artist-fans/1223462">159 fans</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="artist-img">
+                    <a href="artist/Ed-Sheeran/2342870" aria-label="Ed Sheeran"
+                      ><img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ed_Sheeran-6886_(cropped).jpg/237px-Ed_Sheeran-6886_(cropped).jpg"
+                        alt=""
+                        title="Ed Sheeran"
+                        width="50"
+                    /></a>
+                  </div>
+                  <div class="artist-infos">
+                    <div class="artist-title">
+                      <strong><a href="artist/Ed-Sheeran/2342870">Ed Sheeran</a></strong>
+                    </div>
+                    <div class="artist-fans"><a href="artist-fans/2342870">140 fans</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="artist-img">
+                    <a href="artist/Eminem/347307" aria-label="Eminem"
+                      ><img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eminem_-_Concert_for_Valor_in_Washington,_D.C._Nov._11,_2014_(2)_(Cropped).jpg/250px-Eminem_-_Concert_for_Valor_in_Washington,_D.C._Nov._11,_2014_(2)_(Cropped).jpg"
+                        alt=""
+                        title="Eminem"
+                        width="50"
+                    /></a>
+                  </div>
+                  <div class="artist-infos">
+                    <div class="artist-title">
+                      <strong><a href="artist/Eminem/347307">Eminem</a></strong>
+                    </div>
+                    <div class="artist-fans"><a href="artist-fans/347307">98 fans</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end popular artist -->
+
+          <!-- start popular lyrics -->
+          <div class="popular-lyrics row">
+            <div class="col-9">
+              <h4>Our favorite collection of</h4>
+              <h3>Popular Lyrics</h3>
+            </div>
+
+            <div class="col-3">
+              <a><iconify-icon icon="ic:baseline-keyboard-double-arrow-right" width="50"></iconify-icon></a>
+            </div>
+
+            <div class="lyric-list my-2">
+              <ol>
+                <li>
+                  <strong><a href="/lyric-lf/7969282/Breland/Natural">Natural</a></strong> <br />
+                  <a href="artist/Breland/2137846894">Breland</a>
+                </li>
+                <li>
+                  <strong
+                    ><a href="/lyric-lf/7696943/Zach+Bryan/Something+in+the+Orange">Something in the Orange</a></strong
+                  ><br />
+                  <a href="artist/Zach-Bryan/2137860881">Zach Bryan</a>
+                </li>
+                <li>
+                  <strong><a href="/lyric-lf/2408288/Garth+Brooks/Message+In+a+Bottle">Message In a Bottle</a></strong
+                  ><br />
+                  <a href="artist/Garth-Brooks/1535">Garth Brooks</a>
+                </li>
+                <li>
+                  <strong><a href="/lyric-lf/7788543/OneRepublic/I+Ain%27t+Worried">I Ain't Worried</a></strong
+                  ><br />
+                  <a href="artist/OneRepublic/770910">OneRepublic</a>
+                </li>
+                <li>
+                  <strong><a href="/lyric-lf/8004934/%EC%A0%95%EA%B5%AD/Left+and+Right">Left and Right</a></strong
+                  ><br /><a href="artist/%EC%A0%95%EA%B5%AD/2138365931">정국</a>,
+                  <a href="artist/Charlie-Puth/3047262">Charlie Puth</a>
+                </li>
+              </ol>
+              <div class="sb-add-btn">
+                <button type="button" class="btn btn-2 primary">Submit new Lyrics</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- end popular lyrics -->
+          <!-- add to chrome -->
+          <div class="addChrome row">
+            <div id="install-button" class="addChrome-inner">
+              <hgroup class="clearfix">
+                <h4><a href="#" target="_blank">Free, no signup required</a>:</h4>
+
+                <h3 style="font-size: 28px; font-weight: 600; line-height: 36px">
+                  <a
+                    href="https://chrome.google.com/webstore/detail/lyricscom/lemhemhgkggcfkeepaanfpkbjnkgfhpi"
+                    target="_blank"
+                    >Add to Chrome</a
+                  >
+                </h3>
+                <div>
+                  <div class="hp-sym-group-thumb">
+                    <iconify-icon icon="logos:chrome" width="54"></iconify-icon>
+                  </div>
+                </div>
+              </hgroup>
+              <div class="cblock-int clearfix">
+                <span style="font-size: 14px; color: #555"
+                  >Get instant explanation for any lyrics that hits you anywhere on the web!</span
+                >
+                <div style="margin-top: 10px">
+                  <button type="button" class="btn btn-2 primary install-btn">Two clicks install »</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end add to chrome -->
+          <!-- promoted song -->
+          <div class="popular-artist row">
+            <div class="col-9">
+              <h4>Our favorite collection of</h4>
+              <h3>Promoted song</h3>
+            </div>
+
+            <div class="col-3">
+              <a><iconify-icon icon="ic:baseline-keyboard-double-arrow-right" width="50"></iconify-icon></a>
+            </div>
+            <div class="artist-list my-2">
+              <ul>
+                <li>
+                  <div class="artist-img">
+                    <a href="artist/SB19/2137849178" aria-label="SB19"
+                      ><img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/SB19_at_Pepsi_Taste_Challenge_in_Davao.jpg/320px-SB19_at_Pepsi_Taste_Challenge_in_Davao.jpg"
+                        alt=""
+                        title="SB19"
+                        width="50"
+                    /></a>
+                  </div>
+                  <div class="artist-infos">
+                    <div class="artist-title">
+                      <strong><a href="artist/SB19/2137849178">SB19</a></strong>
+                    </div>
+                    <div class="artist-fans"><a href="artist-fans/2137849178">350 fans</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="artist-img">
+                    <a href="artist/Billie-Eilish/3177510" aria-label="Billie Eilish"
+                      ><img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Billie_Eilish_2019_by_Glenn_Francis_(cropped)_2.jpg/208px-Billie_Eilish_2019_by_Glenn_Francis_(cropped)_2.jpg"
+                        alt=""
+                        title="Billie Eilish"
+                        width="50"
+                    /></a>
+                  </div>
+                  <div class="artist-infos">
+                    <div class="artist-title">
+                      <strong><a href="artist/Billie-Eilish/3177510">Billie Eilish</a></strong>
+                    </div>
+                    <div class="artist-fans"><a href="artist-fans/3177510">218 fans</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="artist-img">
+                    <a href="artist/Imagine-Dragons/1184089" aria-label="Imagine Dragons"
+                      ><img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Imagine_Dragons,_Roundhouse,_London_(35390234536).jpg/300px-Imagine_Dragons,_Roundhouse,_London_(35390234536).jpg"
+                        alt=""
+                        title="Imagine Dragons"
+                        width="50"
+                    /></a>
+                  </div>
+                  <div class="artist-infos">
+                    <div class="artist-title">
+                      <strong><a href="artist/Imagine-Dragons/1184089">Imagine Dragons</a></strong>
+                    </div>
+                    <div class="artist-fans"><a href="artist-fans/1184089">205 fans</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="artist-img">
+                    <a href="artist/XXXTENTACION/3303401" aria-label="XXXTENTACION"
+                      ><img
+                        loading="lazy"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Xxxtentacion_(cropped).jpg/240px-Xxxtentacion_(cropped).jpg"
+                        alt=""
+                        title="XXXTENTACION"
+                        width="50"
+                    /></a>
+                  </div>
+                  <div class="artist-infos">
+                    <div class="artist-title">
+                      <strong><a href="artist/XXXTENTACION/3303401">XXXTENTACION</a></strong>
+                    </div>
+                    <div class="artist-fans"><a href="artist-fans/3303401">194 fans</a></div>
+                  </div>
+                </li>
+              </ul>
+              <div style="margin-top: 10px">
+                <button type="button" class="btn btn-2 primary install-btn">Promoted songs »</button>
+              </div>
+            </div>
+          </div>
+          <!-- promoted song -->
+          <!-- quiz section -->
+          <div class="quiz row">
+            <div class="col-9">
+              <h4>Are you a music master?</h4>
+              <h3>Quiz</h3>
+            </div>
+
+            <div class="col-3">
+              <a><iconify-icon icon="ic:baseline-keyboard-double-arrow-right" width="50"></iconify-icon></a>
+            </div>
+
+            <div class="artist-list my-2">
+              <div class="cblock-int">
+                <h5>In "Rumour Has It", how old Adele says is the woman the guy left her for?</h5>
+                <ul class="list-group">
+                  <li class="list-group-item" data-correct="0">
+                    <div class="qz-option">
+                      <strong>A.</strong>&nbsp;<span class="word">25</span>
+                      <span class="qp-ico"><i class="far fa-thumbs-up"></i></span>
+                    </div>
+                  </li>
+                  <li class="list-group-item" data-correct="0">
+                    <div class="qz-option">
+                      <strong>B.</strong>&nbsp;<span class="word">Only seventeen</span>
+                      <span class="qp-ico"><i class="far fa-thumbs-up"></i></span>
+                    </div>
+                  </li>
+                  <li class="list-group-item" data-correct="1">
+                    <div class="qz-option">
+                      <strong>C.</strong>&nbsp;<span class="word">Half his age</span>
+                      <span class="qp-ico"><i class="far fa-thumbs-up"></i></span>
+                    </div>
+                  </li>
+                  <li class="list-group-item" data-correct="0">
+                    <div class="qz-option">
+                      <strong>D.</strong>&nbsp;<span class="word">21</span>
+                      <span class="qp-ico"><i class="far fa-thumbs-up"></i></span>
+                    </div>
+                  </li>
+                </ul>
+                <input type="hidden" id="game-answer" value="Half his age" />
+                <input
+                  type="hidden"
+                  id="game-question"
+                  value='In "Rumour Has It", how old Adele says is the woman the guy left her for?'
+                />
+                <input type="hidden" id="game-question-id" value="oAVoHtQEBV" />
+              </div>
+            </div>
+          </div>
+          <!-- quiz section end -->
+          <!-- advertisement -->
+          <div id="sele-container" class="advertisement" data-wid="6">
+            <div class="sec">
+              <a class="sela-link" href="https://www.selectad.com" target="_blank" aria-label="Go to SelectAd.com"
+                ><span class="widget-logo"></span
+              ></a>
+            </div>
+            <div class="sela-list">
+              <div class="sela-case" data-pid="324">
+                <a href="#" onclick="sela_nclick(this);" target="_blank" title="NonStopCasino UK" rel="dofollow"
+                  ><img
+                    loading="lazy"
+                    src="https://static.stands4.com/placement-image/nonstopcasino-org_324.png"
+                    width="125"
+                    height="125"
+                    alt="NonStopCasino UK"
+                    title="NonStopCasino UK"
+                /></a>
+              </div>
+              <div class="sela-case" data-pid="325">
+                <a
+                  href="#"
+                  onclick="sela_nclick(this);"
+                  target="_blank"
+                  title="Casino Gap — Not On GamStop"
+                  rel="dofollow"
+                  ><img
+                    loading="lazy"
+                    src="https://static.stands4.com/placement-image/casinogap-org_325.png"
+                    width="125"
+                    height="125"
+                    alt="Casino Gap — Not On GamStop"
+                    title="Casino Gap — Not On GamStop"
+                /></a>
+              </div>
+              <div class="sela-case" data-pid="348">
+                <a href="#" onclick="sela_nclick(this);" target="_blank" title="Custom Pins" rel="dofollow"
+                  ><img
+                    loading="lazy"
+                    src="https://static.stands4.com/placement-image/gs-jj-com_348.png"
+                    width="125"
+                    height="125"
+                    alt="Custom Pins"
+                    title="Custom Pins"
+                /></a>
+              </div>
+              <div class="sela-case" data-pid="430">
+                <a href="#" onclick="sela_nclick(this);" target="_blank" title="utländskacasino.net" rel="dofollow"
+                  ><img
+                    loading="lazy"
+                    src="https://static.stands4.com/placement-image/xn--utlndskacasino-7hb-net_430.png"
+                    width="125"
+                    height="125"
+                    alt="utländskacasino.net"
+                    title="utländskacasino.net"
+                /></a>
+              </div>
+              <div class="sela-case" data-pid="475">
+                <a href="#" onclick="sela_nclick(this);" target="_blank" title="free spins no deposit" rel="dofollow"
+                  ><img
+                    loading="lazy"
+                    src="https://static.stands4.com/placement-image/casinoalpha-co-nz_475.png"
+                    width="125"
+                    height="125"
+                    alt="free spins no deposit"
+                    title="free spins no deposit"
+                /></a>
+              </div>
+              <div class="sela-case" data-pid="476">
+                <a href="#" onclick="sela_nclick(this);" target="_blank" title="new casinos canada" rel="dofollow"
+                  ><img
+                    loading="lazy"
+                    src="https://static.stands4.com/placement-image/casinobonusca-com_476.png"
+                    width="125"
+                    height="125"
+                    alt="new casinos canada"
+                    title="new casinos canada"
+                /></a>
+              </div>
+              <div class="sela-case" data-pid="490">
+                <a href="#" onclick="sela_nclick(this);" target="_blank" title="best online casinos" rel="dofollow"
+                  ><img
+                    loading="lazy"
+                    src="https://static.stands4.com/placement-image/casinoalpha-ie_490.png"
+                    width="125"
+                    height="125"
+                    alt="best online casinos"
+                    title="best online casinos"
+                /></a>
+              </div>
+              <div class="sela-case sela-new sup-1">
+                <a href="#" target="_blank" rel="nofollow">
+                  <span class="sela-advertise"
+                    ><span class="sela-adv-title">Advertise Here!</span><span class="sela-adv-sub">125x125</span></span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- advertisement end-->
+        </div>
+
+        <!-- right part area start -->
+
+        <div class="col-md-8 right-part me-0">
+          <!-- welcome banner -->
+          <div class="welcome">
+            <h1 class="pb-2">Welcome to Lyrics.com</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odio vero dolor obcaecati tempora?
+              Perspiciatis voluptatum porro id commodi voluptates, ratione minus. Vel quidem totam labore adipisci!
+              Autem, dolor nisi.
+            </p>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dignissimos vero eum. Temporibus at nihil
+              corporis, alias sit tempora commodi porro praesentium tenetur quaerat laudantium optio reiciendis nobis
+              laborum cum!
+            </p>
+            <button type="submit" class="rounded-3 text-light me-auto btn-3">SUBMIT NEW LYRICS</button>
+          </div>
+          <!-- welcome banner end-->
+          <!-- video section -->
+          <div class="lyric-video">
+            <div class="icon-btn-group">
+              <div class="icon-group">
+                <a href=""><iconify-icon icon="cil:text-size" width="25"></iconify-icon></a>
+                <a href=""><iconify-icon icon="bi:send" width="22"></iconify-icon></a>
+                <a href=""><iconify-icon icon="ant-design:printer-filled" width="24"></iconify-icon></a>
+                <a href=""><iconify-icon icon="codicon:file-pdf" width="24"></iconify-icon></a>
+                <a href=""><iconify-icon icon="bxs:playlist" width="24"></iconify-icon></a>
+                <a href=""><iconify-icon icon="emojione-monotone:speaker-high-volume" width="24"></iconify-icon></a>
+              </div>
+            </div>
+            <div class="one-republic">
+              <h3>I Ain't Worried</h3>
+              <h4>OneRepublic</h4>
+            </div>
+            <div class="bg-light my-3 py-2 rounded-2">
+              <div class="republic-inner d-flex">
+                <img
+                  class="w-25"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OneRepublic_performing_in_Toronto,_Canada,_Aug_2017.jpg/300px-OneRepublic_performing_in_Toronto,_Canada,_Aug_2017.jpg"
+                  alt=""
+                />
+                <p class="m-1 ms-2">
+                  <span>One Republic</span> <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perferendis quibusdam fugiat, non
+                  amet architecto officiis esse impedit nisi aut minima. Fugit amet non soluta, maxime facilis optio
+                  similique quaerat. <br />
+                  <a class="text-decoration-none" href="">more...</a>
+                </p>
+              </div>
+              <div class="d-flex justify-content-end">
+                <p class="d-flex align-items-center mb-0">
+                  <span class="m-1 mt-2"> <iconify-icon icon="carbon:view-filled" width="24"></iconify-icon></span>
+                  <span>43,689</span>
+                </p>
+              </div>
+            </div>
+            <div class="video-box">
+              <h6 class="">FEATURED VIDEOS</h6>
+              <img
+                class="w-100"
+                src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202106/photo-1611162616475-46b635cb68_1200x768.jpeg?0tvpJMLnCRPu9KhbU0PVLntgl0GPWcvW&size=770:433"
+                alt=""
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam recusandae molestias nulla neque
+                exercitationem ut, cupiditate tempora distinctio dolores? Ullam voluptas repellat assumenda at,
+                <br />
+                eaque officiis perferendis? Ad a pariatur distinctio, deserunt natus ratione. Ratione minima voluptatum,
+                laboriosam praesentium animi culpa aut rerum quam eligendi reiciendis, dolore, tenetur porro! Enim, est
+                illum perferendis
+                <br />
+                accusantium vero voluptatibus eligendi iure inventore. Ipsum recusandae sit quam debitis cum nisi
+                molestias, velit labore laborum maxime quos deleniti, pariatur fuga repellendus impedit omnis aliquam
+                dicta dolorum provident officiis expedita ea cumque. Ab tempore, distinctio recusandae iusto ratione
+                quia veritatis animi quidem nemo eius delectus qui, quas nisi expedita accusantium, sint asperiores
+                <br />
+                repellat! Repellendus magni exercitationem dolores alias tempore consectetur in? Quia minus modi totam
+                repellendus est laboriosam ipsa quae at nam dolore eius optio perferendis delectus deleniti veniam
+                consectetur, accusamus atque facere blanditiis soluta sunt, reprehenderit ratione! Beatae, laboriosam
+                <br />
+                eligendi non accusantium ut numquam. Eaque, dicta tempora quae adipisci quia officia totam ut cupiditate
+                sequi qui, iste saepe. Perspiciatis vitae magnam ea necessitatibus tempore. Illo nisi blanditiis
+                <br />
+                delectus praesentium quis pariatur doloremque quidem quisquam quae explicabo modi minus, nesciunt ipsum,
+                animi excepturi, porro incidunt recusandae minima voluptas a. Reiciendis alias ea, dolorem laudantium
+                veniam distinctio.
+              </p>
+              <small
+                >Written by: Bjorn Yttling, Brent Michael Kutzle, John Eriksson, Peter Moren, Ryan B. Tedder, Tyler Spry
+                <br />
+                Lyrics © Sony/ATV Music Publishing LLC, Downtown Music Publishing Lyrics Licensed & Provided by
+                LyricFind</small
+              >
+            </div>
+          </div>
+          <!-- video section end-->
+
+          <!-- comment area -->
+
+          <div class="comment-area">
+            <h4 class="p-2">Share your thoughts about Lyrics.com with the community:</h4>
+            <div class="comment-form-container">
+              <form id="frm-comment">
+                <input type="hidden" name="comment_id" id="commentId" />
+                <input type="hidden" name="cmt_part" id="cmtPart" value="1" />
+                <input type="hidden" id="current-website" value="3" />
+                <input type="hidden" id="current-entity" value="" />
+                <input type="hidden" id="current-entityid" value="" />
+                <input type="hidden" id="comments-limit" value="10" />
+
+                <div class="form-group">
+                  <div class="comments-sort filter-users flr">
+                    <!-- tab button  -->
+                    <ul class="nav nav-pills mb-3 d-flex justify-content-end" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="pills-home-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-home"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-home"
+                          aria-selected="true"
+                        >
+                          Newest
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="pills-profile-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-profile"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-profile"
+                          aria-selected="false"
+                        >
+                          oldest
+                        </button>
+                      </li>
+
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="pills-contact-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-contact"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-contact"
+                          aria-selected="false"
+                        >
+                          popular
+                        </button>
+                      </li>
+                    </ul>
+                    <!-- tab button end -->
+                  </div>
+                  <h5 id="frm-comment-count">421 Comments</h5>
+                  <div
+                    class="form-control"
+                    id="comment"
+                    contenteditable="true"
+                    data-placeholder="Add a comment..."
+                  ></div>
+                  <div class="cmt-options">
+                    <div class="cmt-tools">
+                      <span id="pic-toggle" class="cmt-tool rc5" data-action="picture" title="Upload an image"
+                        ><span class="glyphicon glyphicon-picture"></span
+                      ></span>
+                      <div id="picture-btns" class="hidden">
+                        <input type="file" accept="image/*" class="pic-upload hidden" />
+
+                        <img id="pic-preview" width="14" height="14" src="" alt="" title="Preview" />
+                      </div>
+
+                      <!-- <span class="glyphicon glyphicon-music"></span> -->
+                    </div>
+                    <div class="cmt-publish clearfix">
+                      <div class="col-xs-10 no-padding">
+                        <div id="notify-box" class="checkbox">
+                          <label class="small"
+                            ><input type="checkbox" id="notify" /> Notify me of new comments via email.</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-xs-2 no-padding text-right"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="comment-message"></div>
+              </form>
+            </div>
+
+            <!-- comment box end -->
+
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <ul id="comments-list">
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <button type="button" class="btn btn-2 w-75 ms-5">Load 10 more comments</button>
+                </ul>
+              </div>
+
+              <!-- oldest category start -->
+
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <ul id="comments-list">
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <button type="button" class="btn btn-2 w-75 ms-5 cmt-more install-btn">Load 10 more comments</button>
+                </ul>
+              </div>
+                 <!-- popular area start -->
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <ul id="comments-list">
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="my-3">
+                    <div id="comment-101390" class="comment clearfix row" data-id="101390" data-ts="1661337872">
+                      <div class="col-md-2 no-padding">
+                        <div class="cmt-avatar">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p"
+                            ><img
+                              class="w-75"
+                              src="https://static.stands4.com/images/user/252492"
+                              title="maryjane_p"
+                              alt="maryjane_p"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="cmt-user">
+                          <a href="/user/252492/maryjane_p" target="_blank" title="maryjane_p">maryjane_p</a>
+                        </div>
+                        <div class="cmt-comment">
+                          <div class="cmt-message">
+                            What a fantastic post! This blog is so full of useful information i can’t wait to dig deep
+                            and start utilizing the resources you have given me
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <button type="button" class="btn btn-2 w-75 ms-5 cmt-more install-btn">Load 10 more comments</button>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- comment area end-->
+
+          <!-- signup area -->
+          <div class="signup px-4 py-4">
+            <h3>We need you!</h3>
+            <p>Help us build the largest human-edited song lyrics collection on the web!</p>
+            <div class="col-xs-12 col-sm-4">
+              <div class="actions"><button type="button" class="btn install-btn">Signup</button></div>
+            </div>
+          </div>
+          <!-- signup area end-->
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark py-3">
+      <div class="container">
+        <div class="row text-light footer-text">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col">
+                <h5>Company</h5>
+                <ul>
+                  <li>Login</li>
+                  <li>Add new Lyrics</li>
+                  <li>Add a new Album</li>
+                  <li>Become a Member</li>
+                  <li>Meet the Editors</li>
+                  <li>Recently Added</li>
+                  <li>Song Parodies</li>
+                  <li>Activity Log</li>
+                  <li>Most Popular</li>
+                  <li>Sell Your Lyrics</li>
+                </ul>
+              </div>
+              <div class="col">
+                <h5>Editorial</h5>
+                <ul>
+                  <li>Login</li>
+                  <li>Add new Lyrics</li>
+                  <li>Add a new Album</li>
+                  <li>Become a Member</li>
+                  <li>Meet the Editors</li>
+                  <li>Recently Added</li>
+                  <li>Song Parodies</li>
+                  <li>Activity Log</li>
+                  <li>Most Popular</li>
+                  <li>Sell Your Lyrics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col">
+                <h5>Services</h5>
+                <ul>
+                  <li>Login</li>
+                  <li>Add new Lyrics</li>
+                  <li>Add a new Album</li>
+                  <li>Become a Member</li>
+                  <li>Meet the Editors</li>
+                  <li>Recently Added</li>
+                  <li>Song Parodies</li>
+                  <li>Activity Log</li>
+                  <li>Most Popular</li>
+                  <li>Sell Your Lyrics</li>
+                </ul>
+              </div>
+              <div class="col">
+                <h5>Legal & Contact</h5>
+                <ul>
+                  <li>Login</li>
+                  <li>Add new Lyrics</li>
+                  <li>Add a new Album</li>
+                  <li>Become a Member</li>
+                  <li>Meet Editors</li>
+                  <li>Recently Added</li>
+                  <li>Song Parodies</li>
+                  <li>Activity Log</li>
+                  <li>Most Popular</li>
+                  <li>Sell Your Lyrics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <h5>The STANDS4 Network</h5>
+              <div class="col">
+                <ul>
+                  <li>Login</li>
+                  <li>Add new Lyrics</li>
+                  <li>Add a new Album</li>
+                  <li>Become a Member</li>
+                  <li>Meet the Editors</li>
+                  <li>Recently Added</li>
+                  <li>Song Parodies</li>
+                  <li>Activity Log</li>
+                  <li>Most Popular</li>
+                  <li>Sell Your Lyrics</li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li>Login</li>
+                  <li>Add new Lyrics</li>
+                  <li>Add a new Album</li>
+                  <li>Become a Member</li>
+                  <li>Meet Editors</li>
+                  <li>Recently Added</li>
+                  <li>Song Parodies</li>
+                  <li>Activity Log</li>
+                  <li>Most Popular</li>
+                  <li>Sell Your Lyrics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="social-icon-footer d-flex justify-content-center">
+              <a href=""><iconify-icon icon="akar-icons:twitter-fill" width="30"></iconify-icon></a>
+              <a href=""><iconify-icon icon="akar-icons:facebook-fill" width="26"></iconify-icon></a>
+              <a href=""><iconify-icon icon="akar-icons:reddit-fill" width="26"></iconify-icon></a>
+              <a href=""><iconify-icon icon="simple-icons:addthis" width="26"></iconify-icon></a>
+            </div>
+          <small class="text-center"
+            >© 2001-2022 STANDS4 LLC. <br />
+            All rights reserved.</small
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- all scripts -->
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+  </body>
+</html>
